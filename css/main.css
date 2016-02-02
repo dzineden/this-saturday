@@ -1,0 +1,254 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+  font-family: 'Roboto', sans-serif;
+  color: #444;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+}
+
+.site-header{
+  background-color: #673ab7;
+  color: #FFF;
+}
+
+.container{
+  border: solid 4px red;
+}
+
+@media(min-width: 768px){
+  .container{
+      width: 750px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+}
+@media(min-width: 980px){
+  .container{
+      width: 950px;
+    }
+}
+@media(min-width: 1200px){
+  .container{
+      width: 1170px;
+    }
+}
+
+.logo{
+  border: dotted 1px black;
+  float: left;
+}
+.site-nav{
+  border: dotted 1px black;
+  float: right;
+}
+
+
+.row{
+  border: solid 1px black;
+}
+.one-half{
+  border: solid 1px green;
+  width: 48%;
+}
+.one-half:first-child{float: left;}
+.one-half:last-child{float: right;}
+
+.newone-half{width: 50%;float: left;}
+.one-third{width: 33.333333%;float: left;}
+.one-fourth{width: 50%;float: left;}
+@media(min-width: 768px){
+  .one-fourth{width: 25%;}
+}
+.dabba{
+  margin: 10px;
+  background-color: lightgreen;
+  padding: 15px;
+
+}
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+   (-o-min-device-pixel-ratio: 5/4),
+   (-webkit-min-device-pixel-ratio: 1.25),
+   (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+/* ==========================================================================
+ Print styles
+ ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+      background: transparent !important;
+      color: #000 !important;
+      box-shadow: none !important;
+      text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+      text-decoration: underline;
+  }
+
+  a[href]:after {
+      content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+      content: " (" attr(title) ")";
+  }
+
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+      content: "";
+  }
+
+  pre,
+  blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+  }
+
+  thead {
+      display: table-header-group;
+  }
+
+  tr,
+  img {
+      page-break-inside: avoid;
+  }
+
+  img {
+      max-width: 100% !important;
+  }
+
+  p,
+  h2,
+  h3 {
+      orphans: 3;
+      widows: 3;
+  }
+
+  h2,
+  h3 {
+      page-break-after: avoid;
+  }
+}
