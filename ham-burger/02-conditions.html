@@ -1,0 +1,109 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" href="favicon.ico">
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+  <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+
+</head>
+<body>
+  <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+<header class="site-header">
+  <nav class="container">
+    <div class="logo"><a href="#" id="logo">Whatevr</a></div>
+    <div class="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul>
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="banner">
+<div class="video-mask">
+  <video poster="img/Lake.jpg" autoplay loop class="h5video" >
+    <source src="img/Lake.m4v" type="video/mp4">
+    <source src="img/Lake.webm" type="video/webm">
+    Your browser doesn't support HTML5 video tag.
+  </video>
+</div>
+
+<style>
+  .sub-header{
+    background-color: lightgreen;
+    color: #666;
+    text-align: center;
+    padding: 30px;
+  }
+  .news{
+    background-color: wheat;
+    margin: 40px auto;
+    width: 500px;
+  }
+  .news header{
+    background-color: lightblue;
+    padding: 20px;
+  }
+  .news footer{
+    background-color: lightgray;
+    padding: 6px 20px;
+  }
+  #article-content{
+    padding: 20px;
+  }
+
+
+</style>
+<article class="news">
+  <header id="article-header"></header>
+  <div id="article-content"></div>
+  <footer id="article-footer"></footer>
+</article>
+
+</div>
+<script>
+  articletxt = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque eaque cupiditate reprehenderit a quis eveniet illum, vel soluta animi amet nulla consequuntur dicta. Totam, voluptatum, dolor neque fugiat debitis veniam.';
+  document.getElementById('article-header').innerHTML = 'Say what ever';
+  document.getElementById('article-content').innerHTML = '<p>' + articletxt + '</p>';
+  document.getElementById('article-footer').innerHTML = 'this is footer';
+</script>
+
+<script>
+
+/*  i = prompt('Who are you?');
+
+  s = '<header class="sub-header"><h1>';
+  s += i;
+  s += '</h1></header>';
+
+  markup = '<header class="sub-header"><h1>' + i + '</h1></header>';
+
+  document.write(markup);
+*/
+
+
+</script>
+
+<div style="height:2000px; "></div>
+
+
+</body>
+</html>
