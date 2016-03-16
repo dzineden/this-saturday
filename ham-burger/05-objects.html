@@ -1,0 +1,117 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" href="favicon.ico">
+<!-- <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'> -->
+  <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+
+</head>
+<body>
+  <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+<header class="site-header">
+  <nav class="container">
+    <div class="logo"><a href="#" id="logo">Whatevr</a></div>
+    <div class="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul>
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="banner">
+  <div class="video-mask">
+  <img src="img/bg-xl.jpg" alt="">
+  </div>
+  <div class="container">
+    <p id="txt">Some content</p>
+  </div><!-- eo conatiner -->
+
+<style>
+.one-half{
+  width: 50%;
+  float: left;
+  padding: 25px;
+}
+#workout-wrap{
+  background-color: wheat;
+  padding: 15px;
+}
+
+</style>
+
+
+
+
+<div class="scoreboard">
+
+
+
+  <div class="container">
+    <h2>hey, here is your workout plan</h2>
+    <div class="one-half">
+    </div>
+    <div class="one-half">
+      <div id="workout-wrap">
+        
+      </div>
+    </div>
+   
+  </div>
+</div>
+
+</div>
+
+<script>
+
+console.log("Hello");
+
+var student = {
+  age:30,
+  id:12,
+  name:'KriS',
+  email:'kris@kris.com',
+  printInfo: function () {
+    msg = '<ul>';
+    msg += '<li>Name: ' + student.name + '</li>';
+    msg += '<li>ID: ' + student.id + '</li>';
+    msg += '<li>Age: ' + student.age + '</li>';
+    msg += '<li>Email: ' + student.email + '</li>';
+    msg += '</ul>';
+    return msg;
+  }
+};
+
+function function_name(argument) {
+  // body...
+}
+document.getElementById('workout-wrap').innerHTML = student.printInfo();
+console.log(student.name);
+console.log(student);
+
+
+</script>
+
+<div style="height:2000px; "></div>
+
+
+</body>
+</html>
