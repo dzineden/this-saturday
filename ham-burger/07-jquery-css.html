@@ -1,0 +1,189 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" href="favicon.ico">
+<!-- <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'> -->
+  <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+
+</head>
+<body>
+  <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+<header class="site-header">
+  <nav class="container">
+    <div class="logo"><a href="#" id="logo">Whatevr</a></div>
+    <div class="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul>
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="banner">
+  <div class="video-mask">
+  <img src="img/bg-xl.jpg" alt="">
+  </div>
+  <div class="container">
+    <p id="txt">Some content</p>
+  </div><!-- eo conatiner -->
+
+<style>
+.one-half{
+  width: 50%;
+  float: left;
+  padding: 15px;
+}
+.one-half .content{
+  padding: 25px;
+  background-color: wheat;
+}
+.arrow h2,
+.arrow1 h2{
+  cursor: pointer;
+  position: relative;
+}
+.arrow h2:after{
+  content:"";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-bottom: solid 1px #444;
+  border-right: solid 1px #444;
+  right: 0;
+  top: 10px;
+  -webkit-transition: all 200ms ease;
+     -moz-transition: all 200ms ease;
+      -ms-transition: all 200ms ease;
+       -o-transition: all 200ms ease;
+          transition: all 200ms ease;
+  -webkit-transform: rotate(-45deg);
+     -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+          transform: rotate(-45deg); 
+}
+.arrow h2.close:after{
+  -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg); 
+          transition: all 200ms ease;
+}
+
+</style>
+
+  <div class="container">
+    <h2>hey, here is your workout plan</h2>
+    <div class="one-half">
+      <div class="content arrow">
+        <h2>Some heading</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia nihil, vitae similique porro aspernatur libero suscipit eius aut voluptates nemo, delectus quas quis asperiores excepturi at commodi consectetur facilis odio.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptates ipsam ratione assumenda? Provident nobis iure voluptatum iusto dignissimos eaque, cum vel facere, saepe, in, illum iste cupiditate at atque.</p>
+      </div>
+    </div>
+    <div class="one-half">
+      <div class="content arrow">
+        <h2>Some heading</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia nihil, vitae similique porro aspernatur libero suscipit eius aut voluptates nemo, delectus quas quis asperiores excepturi at commodi consectetur facilis odio.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptates ipsam ratione assumenda? Provident nobis iure voluptatum iusto dignissimos eaque, cum vel facere, saepe, in, illum iste cupiditate at atque.</p>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <style>
+    .arrow1 h2:after,
+    .arrow1 h2:before {
+      content:"";
+      position: absolute;
+      width: 1px;
+      height: 14px;
+      top: 10px;
+      background-color: #444;
+      transition: all 200ms ease;
+    }
+    .arrow1 h2:after{
+      right: 20px;
+      transform: rotate(-45deg); 
+    }
+    .arrow1 h2:before{
+      right: 20px;
+      transform: rotate(45deg); 
+    }
+    .arrow1 h2.close:after{
+      right: 17px;
+      height: 11px;
+      transform: rotate(45deg); 
+    }
+    .arrow1 h2.close:before{
+      right: 24px;
+      height: 11px;
+      transform: rotate(-45deg); 
+    }
+
+
+  </style>
+  <div class="container">
+    <h2>hey, here is your workout plan</h2>
+    <div class="one-half">
+      <div class="content arrow1">
+        <h2>Some heading</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia nihil, vitae similique porro aspernatur libero suscipit eius aut voluptates nemo, delectus quas quis asperiores excepturi at commodi consectetur facilis odio.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptates ipsam ratione assumenda? Provident nobis iure voluptatum iusto dignissimos eaque, cum vel facere, saepe, in, illum iste cupiditate at atque.</p>
+      </div>
+    </div>
+    <div class="one-half">
+      <div class="content arrow1">
+        <h2>Some heading</h2>
+        <div>
+          <p><a href="#" class="btn-change">change the text</a></p>
+          <p class="sometext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia nihil, <strong>vitae similique porro</strong> aspernatur libero <abbr title="Cascading style sheet">CSS</abbr> suscipit eius aut voluptates nemo, delectus quas quis asperiores excepturi at commodi consectetur facilis odio.Lorem ipsum dolor sit amet, consectetur </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/vendor/jquery-1.11.2.min.js"></script>
+<script>
+  jQuery(document).ready(function($) {
+    $('.content h2').click(function() {
+        $(this).toggleClass('close').next().slideToggle();
+/*
+      if ($(this).hasClass('close')) {
+        $(this).removeClass('close');
+      }else {
+        $(this).addClass('close');
+      }
+*/
+    });
+    $('.btn-change').click(function(e) {
+      e.preventDefault();
+      text = $('.sometext').html();
+      console.log(text);
+      newtext = '<ul><li>New Content</li><li>New Content</li><li>New Content</li></ul>';
+      $('.sometext').html(newtext);
+    });
+  });
+</script>
+
+<div style="height:2000px; "></div>
+
+
+</body>
+</html>
