@@ -1,0 +1,98 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="shortcut icon" href="favicon.ico">
+<!-- <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'> -->
+  <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+
+</head>
+<body>
+  <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+<header class="site-header">
+  <nav class="container">
+    <div class="logo"><a href="#" id="logo">Whatevr</a></div>
+    <div class="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul>
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="banner">
+  <div class="video-mask">
+  <img src="img/bg-xl.jpg" alt="">
+  </div>
+  <div class="container">
+    <p id="txt">Some content</p>
+  </div><!-- eo conatiner -->
+
+  <div class="container">
+    <h2>Fill up the form below</h2>
+    <div class="my-form">
+      <div class="content">
+        <header class="form-section-header">
+          <h2>Phone Numbers</h2>
+          <p>You'll get SMS alerts on primary number</p>
+        </header>
+        <div class="form-row">
+          <label for="kg-mobile">Mobile number</label>
+          <div class="form-item">
+            <div class="item primary">
+              <input type="text" id="kg-mobile01" placeholder="mobile number">
+              <span class="msg">Primary number</span>
+              <span class="rdio">
+                <input type="radio" name="isprimary" id="isprimary01" value="1"><label for="isprimary01">make thi primary number</label>
+              </span>
+              <a href="#" class="btn-delete">Remove</a>
+            </div><!-- eo item -->
+            <a href="#" class="clone-btn">add another phone</a>
+          </div><!-- eo form-item -->
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia nihil, vitae similique porro aspernatur libero suscipit eius aut voluptates nemo, delectus quas quis asperiores excepturi at commodi consectetur facilis odio.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptates ipsam ratione assumenda? Provident nobis iure voluptatum iusto dignissimos eaque, cum vel facere, saepe, in, illum iste cupiditate at atque.</p>
+      </div>
+    </div><!-- eo my-form -->
+    
+  </div>
+</div>
+
+<script src="js/vendor/jquery-1.11.2.min.js"></script>
+<script>
+  jQuery(document).ready(function($) {
+    $('.form-section-header').click(function() {
+        $(this).next().slideToggle();
+        $(this).children('h2').toggleClass('close');
+    });
+
+    $('.clone-btn').click(function(event) {
+      event.preventDefault();
+      $(this).prev().clone().appendTo('.form-item');
+
+    });
+  });
+</script>
+
+<div style="height:2000px; "></div>
+
+
+</body>
+</html>

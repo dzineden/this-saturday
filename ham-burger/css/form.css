@@ -1,0 +1,114 @@
+.my-form{
+  max-width: 800px;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: grey;
+}
+.my-form .content{
+  padding: 25px;
+  background-color: #FFFFFF;
+}
+.form-section-header{
+  border-bottom: solid 1px #ccc;
+}
+.form-section-header h2{
+  cursor: pointer;
+  position: relative;
+  margin: 0;
+  font-size: 20px;
+  color: #444;
+  font-weight: normal;
+}
+.form-section-header p{
+  margin: 0;
+  font-size: 13px;
+  color: #888;
+}
+
+.form-section-header h2:after,
+.form-section-header h2:before {
+  content:"";
+  position: absolute;
+  width: 1px;
+  height: 14px;
+  top: 10px;
+  background-color: #444;
+  transition: all 200ms ease;
+}
+.form-section-header h2:after{
+  right: 20px;
+  transform: rotate(-45deg); 
+}
+.form-section-header h2:before{
+  right: 20px;
+  transform: rotate(45deg); 
+}
+.form-section-header h2.close:after{
+  right: 17px;
+  height: 11px;
+  transform: rotate(45deg); 
+}
+.form-section-header h2.close:before{
+  right: 24px;
+  height: 11px;
+  transform: rotate(-45deg); 
+}
+
+.form-row{
+  clear: both;
+  padding:10px 0;
+}
+.form-row:after,
+.item:after{
+  clear: both;
+  content:"";
+  display: table;
+}
+.form-row > label{
+  width: 200px;
+  text-align: right;
+  font-size: 13px;
+  color:#444;
+  font-weight: bold;
+  float: left;
+  margin-top: 8px;
+}
+.form-item{
+  width: 510px;
+  float: right;
+}
+
+.item{
+  background-color: #f9f9f9;
+  border:solid 1px #ccc;
+  padding:5px;
+  margin-bottom: 5px;
+}
+
+.btn-delete{
+  border: solid 1px #CCC;
+  background-color: lightgrey;
+  border-radius: 4px;
+  color:#444;
+  font-size: 12px;
+  text-decoration: none;
+  padding:3px 6px;
+  float: right; 
+}
+.btn-delete:hover{
+  border-color: #666;
+}
+span.msg{
+  color:green;
+  font-size: 12px;
+  display: none;
+}
+span.rdio{
+  color:#666;
+  font-size: 12px;
+}
+
+.primary span.msg{display: inline-block;}
+.primary span.rdio{display: none;}
+.primary .btn-delete{display: none;}
