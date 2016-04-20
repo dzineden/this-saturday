@@ -16,3 +16,16 @@
   color:orange;
   size:20px;
 }
+
+.kg_call{
+  font-size: 20px;
+  padding-left: 20px
+}
+.kg_call a{
+  font-size: 14px;
+  display: block;
+}
+body { padding-top: 70px; }
+
+
+
