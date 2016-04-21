@@ -288,8 +288,20 @@ body{
   padding: 20px;
   margin: 20px auto;
 }
+.pyramid{
+  width:400px;
+  margin:20px auto;
+  text-align: center;
+}
+.pyramid p{
+  margin:2px 0;
+  line-height:20px;
+  font-size:25px;
+}
 
-
+.pyramid p.lucky{
+  color: #F00;
+}
 
 /* ==========================================================================
    Media Queries

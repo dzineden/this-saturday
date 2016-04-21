@@ -73,6 +73,43 @@
 
     ?>
 </div>
+<hr>
+<div class="container">
+    <h2>Pyramid of stars</h2>
+    <div class="pyramid">
+        <?php
+        $luckyrow = rand(1,10);
+        for($i=1;$i<=10;$i++):
+            if($i==$luckyrow):
+                echo '<p class="lucky">';
+            else:
+                echo '<p>';
+            endif;
+                for($j=1;$j<=$i;$j++):
+                    echo ' * ';
+                endfor;
+            echo '</p>';
+        endfor;
+        ?>
+    </div>
+    <hr>
+    <hr>
+    <hr>
+    <div class="pyramid">
+        <?php
+            $luckyanotherrow = rand(1,10);
+            for($i=1;$i<=10;$i++){
+        ?>
+        <p <?php if($luckyanotherrow == $i){echo 'class="lucky"';} ?>>
+            <?php
+                for($j=1;$j<=$i;$j++){
+                    echo ' * ';
+                }
+            ?>
+        </p>
+        <?php } ?>
+    </div>
+</div>
 <div style="height:2000px; "></div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
